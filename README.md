@@ -33,8 +33,6 @@
 
 
 
-
-
 # 🗳️ AI-Powered Election Assistant
 
 An intelligent assistant that helps users understand the election process, timelines, and steps in an interactive and easy-to-follow way.
@@ -99,6 +97,7 @@ python run.py
 
 
 Configuration
+
 Environment Variables
 Variable	Description
 OPENROUTER_API_KEY	Your OpenRouter API key
@@ -113,15 +112,14 @@ Endpoint	Method	Description
 /api/services	GET	List all services
 /api/models	GET	List available models
 /api/health	GET	Health check
+
+
 Service Types
+
 process - Explanation of election process
-
 timeline - Election timeline
-
 step_guide - Step-by-step voting guide
-
 faq - Answers to election questions
-
 accessibility - Accessibility information
 
 
@@ -154,34 +152,25 @@ python run.py
 5 Specialized AI Agents for different election services
 
 8+ Languages support for diverse users
-
 Interactive Interface for easy understanding
-
 Auto-Fallback between 4 different models
-
 Responsive Design for mobile and desktop
-
 Export and Copy functionality
-
 Real-time Status Updates during processing
 
 ✅ Services:
+
 📚 Process Explanation - Understand how elections work
-
 📅 Timeline - Important dates and deadlines
-
 📋 Step-by-Step Guide - Follow the voting process
-
 ❓ FAQ - Get answers to common questions
-
 ♿ Accessibility - Information for all voters
 
+
 ✅ Technology Stack:
+
 CrewAI for multi-agent orchestration
-
 OpenRouter for multi-model support
-
 Flask for web interface
-
 Pydantic for data validation
 
