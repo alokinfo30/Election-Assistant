@@ -1,0 +1,97 @@
+# config/tasks.yaml
+explain_process:
+  description: |
+    Explain the election process for {country} in a clear, simple way.
+    
+    The explanation should cover:
+    1. What is an election and why it matters
+    2. Who can vote
+    3. How to register to vote
+    4. How to find your polling station
+    5. What happens on election day
+    6. How votes are counted
+    7. How results are announced
+    
+    Language: {language}
+    
+    Make the explanation engaging, easy to understand, and suitable for 
+    first-time voters.
+  expected_output: |
+    A comprehensive explanation of the election process in simple, clear language.
+  agent: process_explainer
+
+create_timeline:
+  description: |
+    Create a detailed election timeline for {country}.
+    
+    Include:
+    1. Pre-election activities
+       - Voter registration dates
+       - Candidate nomination dates
+       - Campaign periods
+       - Voter education campaigns
+    2. Election day activities
+       - Polling hours
+       - Voting procedures
+       - Special arrangements
+    3. Post-election activities
+       - Counting dates
+       - Result announcement dates
+       - Dispute resolution timeline
+    
+    Format the timeline clearly with dates and descriptions.
+    Language: {language}
+  expected_output: |
+    A comprehensive election timeline with clear dates and descriptions.
+  agent: timeline_agent
+
+create_step_guide:
+  description: |
+    Create a step-by-step guide for the election process in {country}.
+    
+    Steps should cover:
+    1. Checking voter eligibility
+    2. Voter registration process
+    3. Finding your polling station
+    4. Understanding the ballot
+    5. Voting procedures (in-person, postal, proxy)
+    6. Verification of vote
+    7. What to do if you face issues
+    
+    Include tips, common mistakes to avoid, and what to expect at each step.
+    Language: {language}
+  expected_output: |
+    A detailed step-by-step guide with clear instructions and tips.
+  agent: step_guide_agent
+
+answer_faq:
+  description: |
+    Answer the following question about elections in {country}:
+    
+    Question: {question}
+    
+    Provide a clear, accurate, and helpful answer.
+    Include relevant laws, procedures, and practical advice.
+    Language: {language}
+  expected_output: |
+    A clear, accurate answer to the election question.
+  agent: faq_agent
+
+provide_accessibility_info:
+  description: |
+    Provide accessibility information for voters in {country}.
+    
+    Include:
+    1. Special provisions for voters with disabilities
+    2. Assistance available at polling stations
+    3. Voting options for elderly voters
+    4. Support for first-time voters
+    5. Language assistance
+    6. Transportation assistance
+    7. Alternative voting methods
+    
+    Format the information clearly and make it easy to understand.
+    Language: {language}
+  expected_output: |
+    Comprehensive accessibility information for all voters.
+  agent: accessibility_agent
